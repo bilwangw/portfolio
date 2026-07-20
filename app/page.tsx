@@ -215,8 +215,18 @@ export default function Home() {
         </section>
 
         <section id="projects" className="space-y-6 rounded-xl border border-zinc-200 bg-white/80 p-8 shadow-sm md:p-10">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.35em] text-violet-700">Personal Projects</p>
+          <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.35em] text-violet-700">Personal Projects</p>
+            </div>
+            <a
+              href="https://jhu.digication.com/bill-wang/projects"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-full border border-zinc-300 bg-white px-4 py-2 text-sm font-semibold text-zinc-700 transition hover:border-zinc-400 hover:bg-zinc-50"
+            >
+              View more projects →
+            </a>
           </div>
           <div className="grid gap-6 md:grid-cols-2">
             {projects.map((project) => (
